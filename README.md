@@ -1,4 +1,7 @@
-# Project Title
+# Computer Store Program
+
+![image](https://github.com/user-attachments/assets/8b8cca5e-5d1f-4919-b296-faf3166e4a16)
+
 
 ## Table of Contents
 
@@ -14,8 +17,6 @@
 - Contact
 
 ## Description
-
-A more detailed explanation of what your project does.  What problem does it solve? What are its key features?  Be specific and avoid jargon if possible.  Include a sentence or two summarizing the project for quick understanding.
 
 ## Features
 
