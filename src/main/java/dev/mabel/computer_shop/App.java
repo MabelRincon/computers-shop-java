@@ -1,4 +1,4 @@
-package dev.mabel.template_java;
+package dev.mabel.computer_shop;
 public final class App {
     private App() {}
 

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import dev.mabel.computer_shop.service.ComputerStore;
+import dev.mabel.computer_shop.model.Computer;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class ComputerStoreTest {
         store.addComputer(pc3);
 
         List<Computer> allComputers = store.getAllComputers();
-        assertTrue(allComputers.contains(pc3)), "Computer was added to inventory";
+        assertTrue(allComputers.contains(pc3), "Computer was added to inventory");
         assertEquals(3,allComputers.size(), "There should be 3 computers at the inventory");
     }
 
