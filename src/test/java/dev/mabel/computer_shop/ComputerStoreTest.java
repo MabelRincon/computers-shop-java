@@ -3,6 +3,9 @@ package dev.mabel.computer_shop;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import dev.mabel.computer_shop.service.ComputerStore;
+
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +28,12 @@ public class ComputerStoreTest {
     @Test
     @DisplayName("Test for adding a computer to the store")
     public void testAddComputer() {
-        assertEquals(2, store.getComputers("Dell").size() + store.searchComputers("Lenovo").size());
+        Computer pc3 = new Computer ("Asus", 16, "Intel Core i7", "Windows 10", 1200);
+        store.addComputer(pc3);
+
+        List<Computer> allComputers = store.getAllComputers();
+        assertTrue(allComputers.contains(pc3)), "Computer was added to inventory";
+        assertEquals(3,allComputers.size(), "There should be 3 computers at the inventory");
     }
 
 }
