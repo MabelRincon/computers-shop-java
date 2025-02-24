@@ -5,20 +5,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ComputerStore {
-    private  String name;
-    private  String owner;
-    private  String taxID;
-    private  List<Computer> inventory;
+    private String name;
+    private String owner;
+    private String taxID;
+    private  List<Computer> inventory = new ArrayList<>();
 
     public ComputerStore(String name, String owner, String taxID) {
         this.name = name;
         this.owner = owner;
         this.taxID = taxID;
-        this.inventory = new ArrayList<>();
     }
 
     public void addComputer(Computer computer) {
         inventory.add(computer);
+    }
+
+    public void deleteComputerByBrand(String brand) {
+        inventory.removeIf(computer -> computer.getBrand().equalsIgnoreCase(brand));
     }
 
     public List<Computer> getAllComputers() {
