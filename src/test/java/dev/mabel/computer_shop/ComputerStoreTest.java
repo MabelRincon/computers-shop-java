@@ -44,7 +44,16 @@ public class ComputerStoreTest {
 
         List<Computer> allComputers = store.getAllComputers();
         assertFalse(allComputers.contains(pc1), "Computer was deleted from inventory");
-        assertEquals(2,allComputers.size(), "There should be 2 computer at the inventory");
+        assertEquals(1,allComputers.size(), "There should be 1 computer at the inventory");
+    }
+
+    @Test
+    @DisplayName("Find a computer by brand")
+    public void testFindComputerByBrand() {
+        List<Computer> foundComputers = store.searchComputersByBrand("Lenovo");
+
+        assertEquals(1,foundComputers.size(), "There should be 1 computer matching this search at the inventory");
+        assertEquals(pc2,foundComputers.get(1), "Computer was found");
     }
 
 }
