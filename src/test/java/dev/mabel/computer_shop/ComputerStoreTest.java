@@ -37,4 +37,14 @@ public class ComputerStoreTest {
         assertEquals(3,allComputers.size(), "There should be 3 computers at the inventory");
     }
 
+    @Test
+    @DisplayName("Test deleting a computer from the store by brand")
+    public void testDeleteComputerByBrand() {
+        store.deleteComputerByBrand("Dell");
+
+        List<Computer> allComputers = store.getAllComputers();
+        assertFalse(allComputers.contains(pc1), "Computer was deleted from inventory");
+        assertEquals(2,allComputers.size(), "There should be 2 computer at the inventory");
+    }
+
 }
