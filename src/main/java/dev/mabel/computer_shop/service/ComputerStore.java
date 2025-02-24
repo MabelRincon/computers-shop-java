@@ -28,4 +28,13 @@ public class ComputerStore {
         return new ArrayList<>(inventory);
     }
 
+    public List<Computer> searchComputersByBrand(String brand) {
+        List<Computer> foundComputers = new ArrayList<>();
+        for (Computer computer : inventory) {
+            if (computer.getBrand().equalsIgnoreCase(brand)) {
+                foundComputers.add(computer);
+            }
+        }
+        return foundComputers;
+    }
 }
