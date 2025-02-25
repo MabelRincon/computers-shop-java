@@ -1,4 +1,4 @@
-# Computer Store Program
+# Computer Store NortePC 🖥️
 
 ![image](https://github.com/user-attachments/assets/8b8cca5e-5d1f-4919-b296-faf3166e4a16)
 
@@ -16,69 +16,64 @@
 - Feedback and Contributions
 - Contact
 
-## Description
+## 📌 Description
 
-## Features
+This project is a Java-based application that models a **computer shop**.
+It allows users to manage a store's inventory, including adding, searching, and removing computers by brand.
+The system follows **Test-Driven Development (TDD)** principles and ensures a **minimum test coverage of 70%**.
 
-- A list with all the features from your project.
-- **Feature Name**: What this feature do.
+## 🚀 Features
+
+✅ Add a new computer to the store.
+✅ Delete a computer from the store by brand.
+✅ Search for a computer by brand.
+✅ List all computers in the store with full details.
+
+## 🛠️ Technologies Used
+
+- **Java** Development Kit (JDK) 21
+- **Maven** (for build management)
+- **JUnit 5** (for testing)
+- **Git** (for version control)
+- **Lucidchart** (See UML Diagram (here)[https://lucid.app/lucidchart/eb8dbeda-3f15-4ce3-8176-498fb57533a7/edit?viewport_loc=-195%2C587%2C1705%2C935%2CHWEp-vi-RSFO&invitationId=inv_0c7650ce-9677-446d-a289-2da21d6aa8ca])
+
+## 🔍 UML Class Diagram
+[Click here to view the UML Diagram](https://lucid.app/lucidchart/eb8dbeda-3f15-4ce3-8176-498fb57533a7/edit?viewport_loc=-195%2C587%2C1705%2C935%2CHWEp-vi-RSFO&invitationId=inv_0c7650ce-9677-446d-a289-2da21d6aa8ca)
+
+![nortePC UML](nortePC-UML.png)
+
+## 🧪 Test-Driven Development (TDD)
+The project implements **unit tests** using JUnit 5, ensuring robust test coverage.
+
+📸 **Test Coverage Proof**
+![Test Coverage Screenshot](/home/mabelrincon/Pictures/Screenshots/nortePC-TestCoverage.png)
 
 ## Getting Started
-
-### Prerequisites
-
-- Java Development Kit (JDK) 21
-- Maven (for build management)
-- JUnit (for testing)
-- Git (for version control)
-
 ### Installation
 
 1. Clone the repository:
 ```Bash
-git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
+git clone https://github.com/MabelRincon/computers-shop-java
 ```
 2. Change to your project directory:
 ```bash
-cd your-repo
+cd computers-shop-java
 ```
 4. Run a clean Maven installation:
 ```Bash
-mvn clean install
+mvn compile
+mvn exec:java -Dexec.mainClass="dev.mabel.computer_shop.App"
 ```
 
-## Tests
-
-Describe how to run the project's tests.  Specify the testing framework used (e.g., JUnit, TestNG) and provide commands for running the tests.
-
-**Example (using Maven and JUnit):**
+## Tests Maven
 
 ```Bash
 mvn test
 ```
-## Build
-
-Explain how to build the project.  Specify the build tool used (e.g., Maven, Gradle) and provide the necessary commands.
-
 **Example (using Maven):**
 
 ```Bash
 mvn clean package
-```
-
-## Usage
-
-Provide examples of how to use your project.  Include code snippets, screenshots, or GIFs if helpful.  Explain the different options and parameters available.
-
-**Example (Java code snippet):**
-
-```Java
-
-// Example usage of the main function
-MyClass myObject = new MyClass();
-myObject.doSomething("important argument");
-int result = myObject.calculateValue(10, 20);
-System.out.println("Result: " + result);
 ```
 ## Feedback and Contributions:
 
