@@ -58,10 +58,10 @@ public class ComputerStoreTest {
 
     @Test
     @DisplayName("Get a detailed list of all the computers in the store, including brand, memory, processor, operating system and price")
-    public void testGetDetailedComnputerList() {
+    public void testGetDetailedComputerList() {
         String expectedDetails =
-            "Brand: Dell, Memory: 16, Processor: Intel Core i7, Operating System: Windows 10, Price: 1200\n" +
-            "Brand: Lenovo, Memory: 8, Processor: Intel Core i5, Operating System: Windows 10, Price: 800\n";
+            "Brand: Dell, Memory: 16, Processor: Intel Core i7, Operating System: Windows 10, Price: 1200.0\n" +
+            "Brand: Lenovo, Memory: 8, Processor: Intel Core i5, Operating System: Windows 10, Price: 800.0\n";
 
         String actualDetails = store.getDetailedComputerList();
 
