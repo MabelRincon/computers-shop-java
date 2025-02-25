@@ -53,7 +53,20 @@ public class ComputerStoreTest {
         List<Computer> foundComputers = store.searchComputersByBrand("Lenovo");
 
         assertEquals(1,foundComputers.size(), "There should be 1 computer matching this search at the inventory");
-        assertEquals(pc2,foundComputers.get(1), "Computer was found");
+        assertEquals(pc2,foundComputers.get(0), "Computer was found");
+    }
+
+    @Test
+    @DisplayName("Get a detailed list of all the computers in the store, including brand, memory, processor, operating system and price")
+    public void testGetDetailedComnputerList() {
+        String expectedDetails =
+            "Brand: Dell, Memory: 16, Processor: Intel Core i7, Operating System: Windows 10, Price: 1200\n" +
+            "Brand: Lenovo, Memory: 8, Processor: Intel Core i5, Operating System: Windows 10, Price: 800\n";
+
+        String actualDetails = store.getDetailedComputerList();
+
+        assertEquals(expectedDetails, actualDetails, "The detailed computer list should match the expected output");
     }
 
 }
+
