@@ -46,7 +46,7 @@ The system follows **Test-Driven Development (TDD)** principles and ensures a **
 The project implements **unit tests** using JUnit 5, ensuring robust test coverage.
 
 📸 **Test Coverage Proof**
-![Test Coverage Screenshot](/home/mabelrincon/Pictures/Screenshots/nortePC-TestCoverage.png)
+![Test Coverage Screenshot](nortePC-TestCoverage.png)
 
 ## Getting Started
 ### Installation
