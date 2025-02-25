@@ -37,4 +37,16 @@ public class ComputerStore {
         }
         return foundComputers;
     }
+
+    public String getDetailedComputerList() {
+        StringBuilder computerDetails = new StringBuilder();
+        for (Computer computer : inventory) {
+            computerDetails.append("Brand: ").append(computer.getBrand()).append(", ");
+            computerDetails.append("Memory: ").append(computer.getMemory()).append(", ");
+            computerDetails.append("Processor: ").append(computer.getProcessor()).append(", ");
+            computerDetails.append("Operating System: ").append(computer.getOperatingSystem()).append(", ");
+            computerDetails.append("Price: ").append(computer.getPrice()).append("\n");
+        }
+        return computerDetails.toString();
+    }
 }
